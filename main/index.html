@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>QianKun Example</title>
+  <style>
+    .mainapp-sidemenu a {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="mainapp">
+    <!-- 标题栏 -->
+    <header class="mainapp-header">
+      <h1>QianKun</h1>
+    </header>
+    <div class="mainapp-main">
+      <!-- 侧边栏 -->
+      <ul class="mainapp-sidemenu">
+        <a href='/react16'>React16</a>
+        <a href='/reactcsr'>reactcsr</a>
+        <a href='/purehtml'>Purehtml</a>
+      </ul>
+      <!-- 子应用  -->
+      <main id="subapp-container"></main>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <script>
+    function push(subapp) {
+      history.pushState(null, subapp, subapp)
+    }
+
+  </script>
+</body>
+
+</html>

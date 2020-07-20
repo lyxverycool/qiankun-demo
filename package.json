@@ -1,0 +1,33 @@
+{
+  "name": "demoqiankun",
+  "version": "1.0.0",
+  "description": "微前端qiankun Demo",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && npm run install:main && npm run install:purehtml && npm run install:react16 && npm run install:reactcsr",
+    "start:all": "concurrently \"npm run start:main\" \"npm run start:purehtml\" \"npm run start:react16\" \"npm run start:reactcsr\"",
+    "build:all": "concurrently \"npm run build:main\" \"npm run build:react16\" \"npm run build:reactcsr\"",
+    "install:main": "cd main && npm i",
+    "install:purehtml": "cd purehtml && npm i",
+    "install:react16": "cd react16 && npm i",
+    "install:reactcsr": "cd reactcsr && npm i",
+    "start:main": "cd main && npm run start",
+    "start:purehtml": "cd purehtml && npm run start",
+    "start:react16": "cd react16 && npm run start",
+    "start:reactcsr": "cd reactcsr && npm run start",
+    "build:main": "cd main && npm run build",
+    "build:purehtml": "cd purehtml && npm run build",
+    "build:react16": "cd react16 && npm run build",
+    "build:reactcsr": "cd reactcsr && npm run build"
+  },
+  "keywords": [
+    "qiankun",
+    "react",
+    "single-spa"
+  ],
+  "devDependencies": {
+    "concurrently": "^5.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

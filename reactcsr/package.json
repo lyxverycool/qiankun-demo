@@ -1,0 +1,38 @@
+{
+  "name": "reactcsr",
+  "version": "0.0.9",
+  "description": "csr模板",
+  "scripts": {
+    "start": "npm run start:dev",
+    "build": "npm run build:prod",
+    "start:dev": "cross-env NODE_ENV=development DEV_SERVER=true webpack-dev-server --config webpack/webpack.config.js --open",
+    "start:prod": "cross-env NODE_ENV=production DEV_SERVER=true webpack-dev-server --config webpack/webpack.config.js --open",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack/webpack.config.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.js",
+    "lint": "eslint --ext .js --ext .jsx src"
+  },
+  "author": "lyxcool",
+  "dependencies": {
+    "@loadable/component": "^5.10.2",
+    "antd": "4.1.4",
+    "axios": "^0.19.0",
+    "lyxcool-test": "^1.0.1",
+    "lyxcool-webpack": "2.0.4",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-hot-loader": "^4.12.21",
+    "react-router": "5.0.0",
+    "react-router-dom": "5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1"
+  }
+}
