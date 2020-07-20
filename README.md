@@ -4,9 +4,9 @@
 
 对于项目改造基本需要以下几个步骤:
 
-# 1.修改package.json 的name项目名称，和路由保持一致，不改也可以。
+#### 1.修改package.json 的name项目名称，和路由保持一致，不改也可以。
 
-# 2.修改webpack打包output和跨域
+#### 2.修改webpack打包output和跨域
 
 const packageName = require('../package.json').name;
 
@@ -21,14 +21,14 @@ webpackConfig.output = {
   globalObject: 'window',
 }
 
-# 3.public-path.js
+#### 3.public-path.js
 
 if (window.__POWERED_BY_QIANKUN__) {
   // eslint-disable-next-line no-undef
   __webpack_public_path__ = window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__
 }
 
-# 4.对于入口文件进行修改
+#### 4.对于入口文件进行修改
 
 import './public-path'
 
