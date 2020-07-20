@@ -74,7 +74,7 @@ export async function unmount(props) {
 
 ### 运行(开发模式)
 
-`npm run start:all`
+`npm run start`  //port 3000
 
 ### 构建
 

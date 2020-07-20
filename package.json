@@ -4,6 +4,7 @@
   "description": "微前端qiankun Demo",
   "main": "index.js",
   "scripts": {
+    "start": "npm run start:all",
     "install:all": "npm install && npm run install:main && npm run install:purehtml && npm run install:react16 && npm run install:reactcsr",
     "start:all": "concurrently \"npm run start:main\" \"npm run start:purehtml\" \"npm run start:react16\" \"npm run start:reactcsr\"",
     "build:all": "concurrently \"npm run build:main\" \"npm run build:react16\" \"npm run build:reactcsr\"",

@@ -31,7 +31,7 @@ registerMicroApps(
     {
       name: 'reactcsr',
       entry: '//localhost:3001',
-      container: '#subapp-viewport',
+      container: '#subapp-viewport2',
       loader,
       activeRule: '/reactcsr',
     },
